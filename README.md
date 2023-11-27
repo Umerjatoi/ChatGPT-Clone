@@ -1,6 +1,5 @@
-# chat-Bot like GPT
+# ChatGPT-Clone
 
-pip install streamlit 
-
-streamlit run app.py
+#pip install streamlit
+#streamlit run app.py
 
