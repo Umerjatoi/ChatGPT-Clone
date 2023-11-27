@@ -1,2 +1,2 @@
-# chat-Bot like gpt 
+# chat-Bot like GPT
 
