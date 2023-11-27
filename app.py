@@ -16,7 +16,7 @@ if ['messages'] not in st.session_state:
 if ['API_Key'] not in st.session_state:
     st.session_state['API_Key']= ''
 
-st.set_page_config(page_title="CHATGPT 3.5-Turbo", page_icon="🤖")
+st.set_page_config(page_title="CHATGPT 3.5-Turbo", page_icon="😊")
 st.markdown("<h1 style='text-align: center;'>😊GPT 3.5 Turbo</h1>", unsafe_allow_html=True)
 
 st.sidebar.title("First paste here your Api Key")
