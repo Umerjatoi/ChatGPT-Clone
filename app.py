@@ -32,7 +32,7 @@ def getresponse(userInput, api_key):
         llm = OpenAI( 
             temperature=0,
             openai_api_key= api_key,
-            model_name= "text-davinci-003"
+            model_name= "gpt-3.5-turbo"
             )
 
         st.session_state['conversation'] = ConversationChain(
@@ -52,7 +52,7 @@ container = st.container()
 
 with container:
     with st.form(key='my_form', clear_on_submit=True):
-        prompt = st.text_input("Your question goes here:", key='input', height=100)
+        prompt = st.text_area("Your question goes here:", key='input', height=50)
         submit_button = st.form_submit_button(label='send')
         if submit_button:
             st.session_state['messages'].append(prompt)
