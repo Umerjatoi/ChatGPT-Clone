@@ -52,11 +52,11 @@ container = st.container()
 
 with container:
     with st.form(key='my_form', clear_on_submit=True):
-        user_input = st.text_area("Your question goes here:", key='input', height=100)
+        prompt = st.chat_input("Your question goes here:", key='input', height=100)
         submit_button = st.form_submit_button(label='send')
         if submit_button:
-            st.session_state['messages'].append(user_input)
-            model_response = getresponse(user_input, st.session_state['API_Key'])
+            st.session_state['messages'].append(prompt)
+            model_response = getresponse(prompt, st.session_state['API_Key'])
             st.session_state['messages'].append(model_response)
             
 
