@@ -52,7 +52,7 @@ container = st.container()
 
 with container:
     with st.form(key='my_form', clear_on_submit=True):
-        prompt = st.text_area("Your question goes here:", key='input', height=250)
+        prompt = st.text_area("Your question goes here:", key='input', height=80)
         submit_button = st.form_submit_button(label='send')
         if submit_button:
             st.session_state['messages'].append(prompt)
